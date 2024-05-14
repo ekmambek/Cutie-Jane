@@ -27,7 +27,7 @@ jane_label = tk.Label(root, image = jane_image)
 jane_label.place(x = 0, y = 0)
 
 ask_label = tk.Label(root, text = 'Uh-hello...\nC-could you, please, provide\nthe details of your c-credit card?')
-ask_label.place(x = 119, y = 296)
+ask_label.place(x = 139, y = 296)
 
 cardnumber_label = tk.Label(root, text = 'Card number:')
 cardnumber_label.place(x = 4, y = 296+64)
